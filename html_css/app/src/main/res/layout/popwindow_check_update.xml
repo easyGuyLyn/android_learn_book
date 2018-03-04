@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/check_update_shape"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="24dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="@string/check_update"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/base_textSize" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divide_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/check_yes"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:layout_weight="1"
+                android:background="@drawable/check_button_selector1"
+                android:text="@string/btnConfirm"
+                android:textSize="@dimen/base_textSize" />
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/divide_line" />
+
+            <Button
+                android:id="@+id/check_no"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:layout_weight="1"
+                android:background="@drawable/check_button_selector2"
+                android:text="@string/btnCancel"
+                android:textSize="@dimen/base_textSize" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

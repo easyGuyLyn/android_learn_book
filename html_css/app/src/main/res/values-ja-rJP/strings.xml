@@ -1,0 +1,89 @@
+<resources>
+
+    <string name="loading_tip">読込中･･･</string>
+    <string name="login_loading">ログイン中･･･</string>
+    <string name="exit_app_tip">再度押すと、プロセスを終了します</string>
+    <string name="into_game_error">現在ゲームにログインできません</string>
+    <string name="find_line_error">利用可能なネットワークドメインが見つかりません！</string>
+    <string name="timeout_error">請求ががタイムアウトしました。しばらくしてから再試行してください！</string>
+    <string name="net_busy_error">サービスが混み合っています。後ほど再試行してください！</string>
+    <string name="url_is_null">振込アドレスは空にできません！</string>
+    <string name="reLogin">新しくログインしてください！</string>
+
+    <string name="title_online">オンライン決算</string>
+    <string name="title_wechat">WeChat決済</string>
+    <string name="login">ログイン</string>
+    <string name="title">タイトル</string>
+    <string name="submit">送信</string>
+    <string name="username_hint">アカウントを入力してください</string>
+    <string name="password_hint">パスワードを入力してください</string>
+    <string name="captcha_hint">検証コードを入力してください</string>
+    <string name="enter_captcha">正確な検証コードを入力してください</string>
+    <string name="username_validate">アカウントは空白にできません</string>
+    <string name="password_validate">パスワードは空白にできません</string>
+    <string name="captcha_validate">検証コード形式エラーです</string>
+    <string name="auto_login">自動ログイン</string>
+    <string name="btnLogin">ログイン</string>
+    <string name="register">登録</string>
+    <string name="forget_password">パスワードをお忘れですか？</string>
+    <string name="check_update">最新バージョンが見つかりました。更新してもよろしいですか？</string>
+    <string name="btnConfirm">確認</string>
+    <string name="btnCancel">キャンセル</string>
+    <string name="title_activity_full">完全に有効</string>
+    <string name="loginSoon">直ぐにログイン</string>
+    <string name="noAccount">アカウントがありませんか？</string>
+    <string name="registerSoon">無料でアカウントを開設</string>
+
+    <string name="assetTotal">総資産</string>
+    <string name="assetWallet">ウォレット</string>
+    <string name="assetRefresh">限度額をリフレッシュ</string>
+    <string name="assetDeposit">振込</string>
+
+    <string name="tabHome">メインページ</string>
+    <string name="tabDeposit">振込</string>
+    <string name="tabTransfer">振替</string>
+    <string name="tabWithdraw">引き出し</string>
+    <string name="tabService">サービス</string>
+    <string name="tabMine">マイ</string>
+
+    <string name="txtVersion">現在のバージョン： v</string>
+    <string name="unNet">ネットワークが未接続です、ネットワーク設定を確認してください</string>
+
+    <string name="gameUrlError">ゲームアドレスエラーです</string>
+    <string name="refreshFailed">限度額のリフレッシュに失敗しました</string>
+    <string name="refreshBalance">限度額（%d）をリフレッシュ</string>
+    <string name="saveImgFailed">イメージの保存に失敗しました</string>
+    <string name="saveImgSuccess">アルバムに保存済みです</string>
+    <string name="getCaptchaFail">検証コードの取得に失敗しました</string>
+
+    <string name="refreshing">現在リフレッシュしています</string>
+    <string name="downloading">現在ダウンロードしています･･･</string>
+
+    <string name="checkLine">接続中…</string>
+    <string name="checkOk">接続中…</string>
+    <string name="imageUrlNil">絵アドレスは空です</string>
+
+    <string name="updateVersion">バージョンアップ</string>
+    <string name="btnDemo">デモ</string>
+
+    <string name="tabHall">ホール</string>
+    <string name="prompt">ヒント</string>
+    <string name="demoPrompt">試合のためだけのゲームカジノは、公式ハンディキャップとは関係がありません</string>
+    <string name="welcome">ようこそ！%s</string>
+
+    <string name="defaultContent">あなたは意味のいくつかのボックスを演奏する？</string>
+
+    <string name="tabLottery">宝くじ結果</string>
+    <string name="tabBet">賭け記録</string>
+    <string name="tabMember">会員センター</string>
+    <string name="e606">あなたは追い出されてしまいました。もう一度ログインしてください</string>
+
+    <string name="iBack">戻る</string>
+    <string name="check_version">バージョンの更新</string>
+    <string name="logout">出口</string>
+    <string name="about">〜について</string>
+    <string name="help">ヘルプ</string>
+    <string name="check_loading">チェックイン</string>
+    <string name="no_new_version">まだ更新はありません！</string>
+    <string name="refreshed">リフレッシュされました！</string>
+</resources>

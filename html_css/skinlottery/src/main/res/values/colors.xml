@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#df3a29</color>
+    <color name="colorPrimaryDark">#df3a29</color>
+    <color name="colorAccent">#df3a29</color>
+
+    <color name="tabBg">#f5f5f5</color>
+    <color name="tabTextSelected">#df3a29</color>
+    <color name="tabTextNormal">#7b7878</color>
+    <color name="tabTopLine">#a3a2a2</color>
+
+    <color name="signInBtn">#f5f5f5</color>
+    <color name="signInText">#df3a29</color>
+    <color name="signUpBtn">#f5f5f5</color>
+    <color name="signUpText">#df3a29</color>
+    <color name="demoBtn">#55A3F7</color>
+    <color name="demoText">#ffffff</color>
+
+    <color name="btnAssets">#404040</color>
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/appupdate/appupdate.iml" filepath="$PROJECT_DIR$/appupdate/appupdate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/constant/constant.iml" filepath="$PROJECT_DIR$/constant/constant.iml" />
+      <module fileurl="file://$PROJECT_DIR$/html_css.iml" filepath="$PROJECT_DIR$/html_css.iml" />
+      <module fileurl="file://$PROJECT_DIR$/skinblue/skinblue.iml" filepath="$PROJECT_DIR$/skinblue/skinblue.iml" />
+      <module fileurl="file://$PROJECT_DIR$/skingreen/skingreen.iml" filepath="$PROJECT_DIR$/skingreen/skingreen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/skinlottery/skinlottery.iml" filepath="$PROJECT_DIR$/skinlottery/skinlottery.iml" />
+      <module fileurl="file://$PROJECT_DIR$/skinpink/skinpink.iml" filepath="$PROJECT_DIR$/skinpink/skinpink.iml" />
+      <module fileurl="file://$PROJECT_DIR$/suspendbuttonlayout/suspendbuttonlayout.iml" filepath="$PROJECT_DIR$/suspendbuttonlayout/suspendbuttonlayout.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tool/tool.iml" filepath="$PROJECT_DIR$/tool/tool.iml" />
+    </modules>
+  </component>
+</project>

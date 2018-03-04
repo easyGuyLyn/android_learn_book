@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:suspend="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMain"
+    tools:context="com.dawoo.gamebox.activity.GameActivity">
+
+    <WebView
+        android:id="@+id/wvGame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hardwareAccelerated="true"
+        android:layerType="software" />
+
+    <com.laocaixw.layout.SuspendButtonLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        suspend:distance="60dp"
+        suspend:imageSize="36dp"
+        suspend:marginY="60dp"
+        suspend:number="4"
+        suspend:imageMainOpen="@drawable/game_icon"
+        suspend:imageMainClose="@drawable/game_icon"
+        suspend:image1="@drawable/game_icon_home"
+        suspend:image2="@drawable/game_icon_deposit"
+        suspend:image3="@drawable/game_icon_transfer"
+        suspend:image4="@drawable/game_icon_back" />
+
+</RelativeLayout>

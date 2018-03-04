@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/flMenu"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/popup_menu_bg">
+
+    <ListView
+        android:id="@+id/lvMenu"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:divider="@color/colorLine"
+        android:dividerHeight="0.5dp"
+        android:visibility="visible">
+    </ListView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp" />
+
+</LinearLayout>

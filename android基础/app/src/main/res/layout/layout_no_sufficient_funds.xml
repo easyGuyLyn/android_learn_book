@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/record_margin"
+        android:background="@drawable/shape_dialog_hint"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/record_margin"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/button_01"
+            android:layout_marginTop="@dimen/record_margin"/>
+
+        <TextView
+            android:id="@+id/tv_withdraw_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/record_margin"
+            android:layout_marginLeft="@dimen/record_margin"
+            android:gravity="center"
+            android:text="@string/not_sufficient_funds_hint"
+            />
+
+        <Button
+            android:id="@+id/bt_deposit"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="@dimen/record_margin"
+            android:background="@drawable/shape_withdraw_money_bt"
+            android:textColor="@color/white"
+            android:text="快速存款"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

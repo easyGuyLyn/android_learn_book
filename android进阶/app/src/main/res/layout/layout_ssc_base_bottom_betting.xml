@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/ssc_layout_bottom_height"
+    android:layout_alignParentBottom="true">
+    <TextView
+        android:id="@+id/tv_computer_select"
+        android:layout_width="60dp"
+        android:layout_height="36dp"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:text="@string/machine_selection"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_16_sp"
+        android:background="@drawable/shape_tv_clear_empty_bg"/>
+
+    <TextView
+        android:id="@+id/tv_setting_special"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/et_multiple"
+        android:layout_centerVertical="true"
+        android:text="@string/tv_setting_special"
+        android:background="@mipmap/img_setting_special"
+        android:gravity="center"
+        android:layout_marginRight="@dimen/dp_8"
+        />
+    
+    <EditText
+        android:id="@+id/et_multiple"
+        android:layout_width="100dp"
+        android:layout_height="36dp"
+        android:layout_centerInParent="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_16_sp"
+        android:gravity="center"
+        android:background="@drawable/shape_tv_clear_empty_bg"/>
+
+    <TextView
+        android:layout_toRightOf="@+id/et_multiple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/times"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_17_sp"
+        android:layout_centerVertical="true"
+        android:paddingLeft="@dimen/dp_8"/>
+
+    <TextView
+        android:id="@+id/tv_place_order"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/betting"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_17_sp"
+        android:layout_alignParentRight="true"
+        android:background="@color/colorPrimary"/>
+</RelativeLayout>

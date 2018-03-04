@@ -1,0 +1,54 @@
+.layermbox{position:relative;z-index:19891014}
+.layermmain,.laymshade{position:fixed;top:0;left:0;width:100%;height:100%}
+.layermbtn span,.layermchild{position:relative;display:inline-block}
+.laymshade{background-color:rgba(0,0,0,.5);pointer-events:auto}
+.layermmain{display:table;font-family:Helvetica,arial,sans-serif;pointer-events:none}
+.layermmain .section{display:table-cell;vertical-align:middle;text-align:center}
+.layermchild{border-radius:6px;background-color:rgba(255,255,255,.95);box-shadow:0 0 8px rgba(0,0,0,.1);text-align:left;font-size:14px;pointer-events:auto;-webkit-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-duration:.18s;animation-duration:.18s}
+.layermborder{border:1px solid #999}
+@-webkit-keyframes bounceIn{
+	0%{opacity:0;-webkit-transform:scale(.5);transform:scale(.5)}
+	100%{opacity:1;-webkit-transform:scale(1);transform:scale(1)}
+}
+.layermanim{animation-name:bounceIn;-webkit-animation-name:bounceIn}
+.layermbox0 .layermchild{width:270px}
+.layermbox1 .layermchild{border:none;border-radius:0}
+.layermbox2 .layermchild{width:auto;max-width:260px;min-width:40px;border:none;background:0 0;box-shadow:none;color:#fff}
+.layermchild h3{margin:0;padding:15px 15px 0;text-align:center;font-weight:500;font-size:18px}
+.layermbtn span,.layermchild h3{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.layermcont{padding:5px 15px 15px;text-align:center;line-height:22px}
+.layermcont input{margin:10px 0 0;padding:0 5px;width:228px;height:30px;border:1px solid rgba(0,0,0,.3);border-radius:0;background:#fff;font-size:14px}
+.layermbox1 .layermcont{padding:0;text-align:left}
+.layermbox2 .layermcont{padding:0;text-align:center;line-height:0}
+.layermbox2 .layermcont i{display:inline-block;margin-left:8px;width:25px;height:25px;border-radius:100%;background-color:#fff;-webkit-animation:bouncedelay 1.4s infinite ease-in-out;animation:bouncedelay 1.4s infinite ease-in-out;-webkit-animation-fill-mode:both;animation-fill-mode:both}
+@-webkit-keyframes bouncedelay{
+	0%,100%,80%{-webkit-transform:scale(0);transform:scale(0)}
+	40%{-webkit-transform:scale(1);transform:scale(1)}
+}
+@keyframes bouncedelay{
+	0%,100%,80%{-webkit-transform:scale(0);transform:scale(0)}
+	40%{-webkit-transform:scale(1);transform:scale(1)}
+}
+.layermbox2 .layermcont i:first-child{margin-left:0;-webkit-animation-delay:-.32s;animation-delay:-.32s}
+.layermbox2 .layermcont i.laymloadtwo{-webkit-animation-delay:-.16s;animation-delay:-.16s}
+.layermbox2 .layermcont>div{margin-bottom:20px;padding-top:7px;font-size:17px;line-height:22px}
+.layermbtn{position:relative;height:45px;border-top:1px solid #e1e1e1;color:#333;text-align:center;font-size:0;line-height:44px}
+.layermbtn span{width:50%;border-radius:0 6px 0 0;color:#333;text-align:center;font-size:17px;cursor:pointer}
+.layermbtn span:first-child{height:44px;border-radius:0 0 0 6px}
+.layermbtn span[type='0']{height:44px;border-left:1px solid #e1e1e1}
+.layermbtn .single{position:relative;height:44px;border-top:1px solid #e1e1e1;color:#007aff;text-align:center;font-size:0;line-height:44px}
+.layermbtn .single span{width:100%;border-radius:0 6px 0 6px;text-align:center;font-size:17px;cursor:pointer}
+.layermend{position:absolute;top:10px;right:7px;display:none;width:30px;height:30px;border:0;background:0 0;font-weight:400;font-size:30px;cursor:pointer;-webkit-appearance:none}
+.layermend::after,.layermend::before{position:absolute;top:15px;left:5px;width:18px;height:1px;border-radius:3px;background-color:#999;content:'';-webkit-transform:rotate(45deg);transform:rotate(45deg)}
+.layermend::after{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}
+.layermcont div#captcha input{width:139px}
+.layermcont div#captcha img{width:86px;height:30px;vertical-align:bottom}
+.layermcont .sign-up{display:block;padding:8px;width:228px;height:20px}
+.layermcont a.left{position:relative;float:left;display:inline-block}
+.layermcont a.right{position:relative;float:right;display:inline-block}
+.layermcont input.code{width:168px;border-right:0}
+.layermcont img.code{margin-top:-2px;width:60px;height:30px;border-top:1px solid #b2b2b2;border-right:1px solid #b2b2b2;border-bottom:1px solid #b2b2b2;vertical-align:middle}
+@media screen and (-webkit-min-device-pixel-ratio:0){.layermcont img.code{margin-top:-4px}}
+.layer-disable{position:absolute;z-index:999;display:none;width:100%;height:44px}
+.btn-disable>span{color:#999}
+.layermcont span.assist{color:#999}

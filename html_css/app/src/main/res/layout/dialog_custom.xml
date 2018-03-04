@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:skin="http://schemas.android.com/android/skin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/custom_dialog_bg"
+    android:orientation="vertical"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/prompt"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textColor="#666666"
+        android:textSize="16sp" />
+
+    <include layout="@layout/vertical_line" />
+
+    <TextView
+        android:id="@+id/tvContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/demoPrompt"
+        android:paddingTop="10dp"
+        android:paddingLeft="20dip"
+        android:paddingRight="20dp"
+        android:textColor="#666666"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tvUpdaeInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/demoPrompt"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="5dp"
+        android:maxHeight="90dip"
+        android:scrollbars="vertical"
+        android:fadeScrollbars="false"
+        android:textColor="#666666"
+        android:textSize="12sp" />
+
+    <include layout="@layout/vertical_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/tvConfirm"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/btnConfirm"
+            android:textColor="@drawable/dialog_btn_color"
+            android:textSize="14sp"
+            skin:enable="true" />
+
+        <include layout="@layout/horizontal_line" />
+
+        <TextView
+            android:id="@+id/tvCancel"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/btnCancel"
+            android:textColor="@drawable/dialog_btn_color"
+            android:textSize="14sp"
+            skin:enable="true" />
+    </LinearLayout>
+
+</LinearLayout>

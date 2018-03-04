@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/appupdate" />
+            <option value="$PROJECT_DIR$/constant" />
+            <option value="$PROJECT_DIR$/skinblue" />
+            <option value="$PROJECT_DIR$/skingreen" />
+            <option value="$PROJECT_DIR$/skinlottery" />
+            <option value="$PROJECT_DIR$/skinpink" />
+            <option value="$PROJECT_DIR$/suspendbuttonlayout" />
+            <option value="$PROJECT_DIR$/tool" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

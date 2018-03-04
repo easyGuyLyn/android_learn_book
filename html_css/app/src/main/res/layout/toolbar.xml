@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:skin="http://schemas.android.com/android/skin"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/toolbar_height"
+    android:theme="@style/ToolbarTheme"
+    android:background="?attr/colorPrimary"
+    android:minHeight="?attr/actionBarSize"
+    skin:enable="true">
+
+    <RelativeLayout
+        android:id="@+id/rlLogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp">
+
+        <ImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:maxWidth="140dp"
+            android:maxHeight="40dp"
+            android:adjustViewBounds="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitStart"/>
+
+        <!--尚未登陆-->
+        <LinearLayout
+            android:id="@+id/llLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="56dp"
+                android:layout_height="@dimen/toolbar_btn_height"
+                android:background="@drawable/toolbar_login_btn"
+                android:text="@string/btnLogin"
+                android:textAllCaps="false"
+                android:textColor="@color/signInText"
+                skin:enable="true"/>
+
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="56dp"
+                android:layout_height="@dimen/toolbar_btn_height"
+                android:layout_marginStart="6dp"
+                android:background="@drawable/toolbar_regis_btn"
+                android:text="@string/register"
+                android:textAllCaps="false"
+                android:textColor="@color/signUpText"
+                skin:enable="true"/>
+        </LinearLayout>
+
+        <!--登录成功后-->
+        <include layout="@layout/login_after_title" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.Toolbar>

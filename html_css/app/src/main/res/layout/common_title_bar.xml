@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:skin="http://schemas.android.com/android/skin"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/toolbar_height"
+    android:background="@color/colorPrimary"
+    android:paddingEnd="5dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="5dp"
+    android:paddingStart="15dp"
+    skin:enable="true"
+    tools:context=".activity.LoginActivity"
+    tools:targetApi="lollipop">
+
+    <RelativeLayout
+        android:id="@+id/rlBank"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ibtnBack"
+            android:background="@color/transparent"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/title_back"
+            android:visibility="visible"/>
+
+        <ImageView
+            android:id="@+id/ibtnBack2"
+            android:background="@color/transparent"
+            android:layout_width="20dp"
+            android:layout_height="26dp"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/title_back_text"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tvBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/ibtnBack2"
+            android:text="@string/iBack"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="50dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:scrollHorizontally="true"
+        android:textColor="@color/colorTitle"
+        android:textSize="18sp"
+        android:layout_toEndOf="@id/rlBank" />
+
+    <include layout="@layout/login_after_title" />
+
+</RelativeLayout>

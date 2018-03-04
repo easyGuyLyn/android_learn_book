@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF1766bb</color>
+    <color name="colorPrimaryDark">#1766bb</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!--main-->
+    <color name="tabBg">#131313</color>
+    <color name="tabTextSelected">#55A3F7</color>
+    <color name="tabTextNormal">#FFFFFF</color>
+
+    <!--login-->
+    <color name="login_prompt">#AAAAAA</color>
+    <color name="colorMain">#09102c</color>
+    <color name="colorSub">#1766bb</color>
+    <color name="colorTitle">#ffffff</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorGray">#898989</color>
+    <color name="text_gray">#999999</color>
+    <color name="bgColor">#f2f2f2</color>
+    <color name="divide_line">#e6e6e6</color>
+    <color name="setting_divide_line">#cdcdcd</color>
+    <color name="setting_text_color">#8a8a8a</color>
+    <color name="buttonPress">#1766bb</color>
+    <color name="background_blue">#1766bb</color>
+
+    <color name="disBtnAssets">#747472</color>
+    <color name="btnAssets">#404040</color>
+    <color name="colorLine">#e4e3e3</color>
+    <color name="tabTopLine">#131313</color>
+    <color name="transparent">@android:color/transparent</color>
+
+    <color name="signInBtn">#009944</color>
+    <color name="signUpBtn">#EB6100</color>
+    <color name="signInText">#ffffff</color>
+    <color name="signUpText">#ffffff</color>
+    <color name="demoBtn">#55A3F7</color>
+    <color name="demoText">#ffffff</color>
+    <color name="red">#ff0000</color>
+    <color name="white">#ffffff</color>
+</resources>

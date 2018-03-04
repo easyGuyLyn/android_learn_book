@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0088ff</color>
+    <color name="colorPrimaryDark">#0088ff</color>
+    <color name="colorAccent">#0088ff</color>
+
+    <color name="tabBg">#f5f5f5</color>
+    <color name="tabTextSelected">#0088ff</color>
+    <color name="tabTextNormal">#7b7878</color>
+    <color name="tabTopLine">#a3a2a2</color>
+
+    <color name="signInBtn">#f5f5f5</color>
+    <color name="signUpBtn">#EB6100</color>
+    <color name="signInText">#0088ff</color>
+    <color name="signUpText">#ffffff</color>
+</resources>

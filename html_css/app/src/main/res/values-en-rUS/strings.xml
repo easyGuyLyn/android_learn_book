@@ -1,0 +1,89 @@
+<resources>
+
+    <string name="loading_tip">Loading…</string>
+    <string name="login_loading">Log in…</string>
+    <string name="exit_app_tip">Press again to exit the program</string>
+    <string name="into_game_error">Temporarily unable to log in to the game</string>
+    <string name="find_line_error">Can not find available line domain!</string>
+    <string name="timeout_error">Request timeout, please try again later!</string>
+    <string name="net_busy_error">Service busy, please try again later!</string>
+    <string name="url_is_null">Incoming address is empty!</string>
+    <string name="reLogin">Please login again!</string>
+
+    <string name="title_online">Online payment</string>
+    <string name="title_wechat">WeChat payment</string>
+    <string name="login">Log in</string>
+    <string name="title">Title</string>
+    <string name="submit">Submit</string>
+    <string name="username_hint">Please input username</string>
+    <string name="password_hint">Please enter password</string>
+    <string name="captcha_hint">Please enter verify code</string>
+    <string name="enter_captcha">Please enter correct verify code</string>
+    <string name="username_validate">Username can not be empty</string>
+    <string name="password_validate">Password can not be empty</string>
+    <string name="captcha_validate">Verify code format is incorrect</string>
+    <string name="auto_login">Auto login</string>
+    <string name="btnLogin">Sign in</string>
+    <string name="register">Sign up</string>
+    <string name="forget_password">Forget password</string>
+    <string name="check_update">Detected the latest version, is it updated?</string>
+    <string name="btnConfirm">Confirm</string>
+    <string name="btnCancel">Cancel</string>
+    <string name="title_activity_full">FullActivity</string>
+    <string name="loginSoon">Log in immediately</string>
+    <string name="noAccount">No account?</string>
+    <string name="registerSoon">Create a free account</string>
+
+    <string name="assetTotal">Total assets</string>
+    <string name="assetWallet">Wallet</string>
+    <string name="assetRefresh">Refresh amount</string>
+    <string name="assetDeposit">Deposit</string>
+
+    <string name="tabHome">Home</string>
+    <string name="tabDeposit">Deposit</string>
+    <string name="tabTransfer">Transfer</string>
+    <string name="tabWithdraw">Withdrawal</string>
+    <string name="tabService">C.S</string>
+    <string name="tabMine">Mine</string>
+
+    <string name="txtVersion">current version: v</string>
+    <string name="unNet">The network is not connected, check the network settings</string>
+
+    <string name="gameUrlError">The game url is wrong</string>
+    <string name="refreshFailed">Balance refresh failed</string>
+    <string name="refreshBalance">Refresh amount(%d)</string>
+    <string name="saveImgFailed">Image saved failed</string>
+    <string name="saveImgSuccess">Image saved to album</string>
+    <string name="getCaptchaFail">Failed to get verify code</string>
+
+    <string name="refreshing">Refreshing…</string>
+    <string name="downloading">Downloading…</string>
+
+    <string name="checkLine">Detecting line, please wait later…</string>
+    <string name="checkOk">Detection complete，enter…</string>
+    <string name="imageUrlNil">Image url is empty</string>
+
+    <string name="updateVersion">Updating</string>
+    <string name="btnDemo">Demo</string>
+
+    <string name="tabHall">Hall</string>
+    <string name="prompt">Prompt</string>
+    <string name="demoPrompt">Game casino only for trial, has nothing to do with the official Handicap</string>
+    <string name="welcome">Welcome! %s</string>
+
+    <string name="defaultContent">What do you want to do?</string>
+
+    <string name="tabLottery">Lottery</string>
+    <string name="tabBet">Bet</string>
+    <string name="tabMember">Member</string>
+    <string name="e606">You have been forced to kick out, please log in again</string>
+    
+    <string name="iBack">Back</string>
+    <string name="check_version">check version</string>
+    <string name="logout">Exit</string>
+    <string name="about">About</string>
+    <string name="help">Help</string>
+    <string name="check_loading">Checking</string>
+    <string name="no_new_version">No updates yet！</string>
+    <string name="refreshed">Refreshed！</string>
+</resources>

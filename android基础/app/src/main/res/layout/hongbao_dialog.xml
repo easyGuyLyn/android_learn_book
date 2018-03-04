@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/open_ll"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_gravity="center"
+        android:background="@mipmap/hongbao_04"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/open_close_iv"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="64dp"
+            android:layout_marginTop="64dp"
+            android:src="@mipmap/banner_close_icon" />
+
+
+        <TextView
+            android:id="@+id/next_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="240dp"
+            android:gravity="center"
+            android:paddingStart="@dimen/activity_horizontal_margin"
+            android:text="@string/next_time"
+            android:textColor="#F5C780"
+            android:textSize="10sp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/time_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="260dp"
+            android:gravity="center"
+            android:paddingStart="@dimen/activity_horizontal_margin"
+            android:textColor="@color/color_text_hongbao"
+            android:textSize="12sp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/count_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="250dp"
+            android:gravity="center"
+            android:paddingStart="@dimen/activity_horizontal_margin"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/count0_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="275dp"
+            android:gravity="center"
+            android:paddingStart="@dimen/activity_horizontal_margin"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+
+        <FrameLayout
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="290dp"
+            android:background="@color/transparent">
+
+            <FrameLayout
+                android:id="@+id/open_regular_fl"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                android:background="@mipmap/button_02">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/rule_lable"
+                    android:textColor="#F04317"
+                    android:textSize="@dimen/text_14_sp"
+                    android:textStyle="bold" />
+            </FrameLayout>
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="170dp"
+            android:background="@color/transparent">
+
+            <FrameLayout
+                android:id="@+id/open_open_fl"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_marginStart="14dp"
+                android:background="@mipmap/hongbao_open"
+                android:descendantFocusability="blocksDescendants">
+
+                <ImageView
+                    android:id="@+id/open_hongbao_iv"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/open"
+                    android:visibility="gone"/>
+            </FrameLayout>
+        </FrameLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/regural_ll"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_gravity="center"
+        android:background="@mipmap/hongbao_03"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/regural_close_iv"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="64dp"
+            android:layout_marginTop="64dp"
+            android:src="@mipmap/banner_close_icon" />
+
+        <ScrollView
+            android:layout_width="140dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="186dp">
+
+            <FrameLayout
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:id="@+id/regular_tv"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="22dp"
+                    android:padding="4dp"
+                    android:textColor="#8A321B"
+                    android:textSize="10sp" />
+            </FrameLayout>
+        </ScrollView>
+
+
+
+        <FrameLayout
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="320dp">
+
+            <FrameLayout
+                android:id="@+id/regular_confirm_fl"
+                android:layout_width="58dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="22dp"
+                android:background="@mipmap/button_03">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/hongbao_confirm"
+                    android:textColor="#F04317"
+                    android:textSize="@dimen/text_14_sp"
+                    android:textStyle="bold" />
+            </FrameLayout>
+        </FrameLayout>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/success_ll"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background="@mipmap/hongbao_02"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/success_close_iv"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="64dp"
+            android:layout_marginTop="64dp"
+            android:src="@mipmap/banner_close_icon" />
+
+        <TextView
+            android:id="@+id/success_tip_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="170dp"
+            android:gravity="center"
+            android:paddingStart="@dimen/activity_horizontal_margin"
+            android:text="@string/hongbao_get_partten"
+            android:textColor="#8A321B"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+
+        <FrameLayout
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="190dp"
+            android:background="@color/transparent">
+
+            <FrameLayout
+                android:id="@+id/success_open_fl"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_marginStart="14dp"
+                android:background="@mipmap/hongbao_open">
+
+                <ImageView
+                    android:id="@+id/success_hongbao_iv"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/open"
+                    android:visibility="gone"/>
+            </FrameLayout>
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/remain_count_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="260dp"
+            android:gravity="center"
+            android:paddingStart="@dimen/activity_horizontal_margin"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <FrameLayout
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="290dp"
+            android:background="@color/transparent">
+
+            <FrameLayout
+                android:id="@+id/success_regular_fl"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                android:background="@mipmap/button_02">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/rule_lable"
+                    android:textColor="#F04317"
+                    android:textSize="@dimen/text_14_sp"
+                    android:textStyle="bold" />
+            </FrameLayout>
+        </FrameLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/faile_ll"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background="@mipmap/hongbao_01"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/faile_close_iv"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="64dp"
+            android:layout_marginTop="64dp"
+            android:src="@mipmap/banner_close_icon" />
+
+        <TextView
+            android:id="@+id/faile_tip_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="170dp"
+            android:gravity="center"
+            android:paddingStart="@dimen/activity_horizontal_margin"
+            android:text="@string/hongbao_faile"
+            android:textColor="#8A321B"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+
+        <FrameLayout
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="190dp"
+            android:background="@color/transparent">
+
+            <FrameLayout
+                android:id="@+id/faile_open_fl"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_marginStart="14dp"
+                android:background="@mipmap/hongbao_open">
+
+                <ImageView
+                    android:id="@+id/faile_hongbao_iv"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/open"
+                    android:visibility="gone"/>
+            </FrameLayout>
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/faile_remain_count_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="260dp"
+            android:gravity="center"
+            android:paddingStart="@dimen/activity_horizontal_margin"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <FrameLayout
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="290dp"
+            android:background="@color/transparent">
+
+            <FrameLayout
+                android:id="@+id/faile_regular_fl"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                android:background="@mipmap/button_02">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/rule_lable"
+                    android:textColor="#F04317"
+                    android:textSize="@dimen/text_14_sp"
+                    android:textStyle="bold" />
+            </FrameLayout>
+        </FrameLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+.mui-dtpicker{position:fixed;bottom:0;left:0;z-index:999999;width:100%;border-top:solid 1px #ccc;background-color:#eee;box-shadow:0 -5px 7px 0 rgba(0,0,0,.1);-webkit-transition:.3s;-webkit-transform:translateY(300px)}
+.mui-dtpicker.mui-active{-webkit-transform:translateY(0)}
+.mui-dtpicker-active-for-page{overflow:hidden!important}
+.mui-android-5-1 .mui-dtpicker{bottom:-300px;-webkit-transition-property:bottom;-webkit-transform:none}
+.mui-android-5-1 .mui-dtpicker.mui-active{bottom:0;-webkit-transition-property:bottom;-webkit-transform:none}
+.mui-dtpicker-header{padding:6px;color:#888;font-size:14px}
+.mui-dtpicker-header button{padding:5px 10px;font-size:12px}
+.mui-dtpicker-header button:last-child{float:right}
+.mui-dtpicker-body{position:relative;width:100%;height:200px}
+.mui-ios .mui-dtpicker-body{-webkit-perspective:1200px;perspective:1200px;-webkit-transform-style:preserve-3d;transform-style:preserve-3d}
+.mui-dtpicker-title h5{display:inline-block;margin:0;padding:8px;width:20%;border-top:solid 1px #ddd;border-bottom:solid 1px #ccc;background-color:#f0f0f0;text-align:center}
+.mui-dtpicker .mui-picker{float:left;margin:0;width:20%;height:100%;border:none}
+[data-type=datetime] .mui-picker,[data-type=time] .mui-dtpicker-title h5{width:20%}
+[data-type=datetime] [data-id=picker-h],[data-type=datetime] [data-id=title-h]{border-left:dotted 1px #ccc}
+[data-type=date] .mui-dtpicker-title h5,[data-type=date] .mui-picker{width:33.3%}
+[data-type=date] [data-id=picker-h],[data-type=date] [data-id=title-h],[data-type=date] [data-id=picker-i],[data-type=date] [data-id=title-i]{display:none}
+[data-type=hour] .mui-dtpicker-title h5,[data-type=hour] .mui-picker{width:25%}
+[data-type=hour] [data-id=picker-i],[data-type=hour] [data-id=title-i]{display:none}
+[data-type=hour] [data-id=picker-h],[data-type=hour] [data-id=title-h]{border-left:dotted 1px #ccc}
+[data-type=time] .mui-dtpicker-title h5,[data-type=time] .mui-picker{width:50%}
+[data-type=time] [data-id=picker-d],[data-type=time] [data-id=title-y],[data-type=time] [data-id=title-m],[data-type=time] [data-id=title-d],[data-type=time] [data-id=picker-y],[data-type=time] [data-id=picker-m]{display:none}
+[data-type=month] .mui-dtpicker-title h5,[data-type=month] .mui-picker{width:50%}
+[data-type=month] [data-id=picker-d],[data-type=month] [data-id=title-d],[data-type=month] [data-id=picker-h],[data-type=month] [data-id=title-h],[data-type=month] [data-id=picker-i],[data-type=month] [data-id=title-i]{display:none}

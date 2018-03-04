@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:skin="http://schemas.android.com/android/skin"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    android:fitsSystemWindows="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <!--title-->
+    <include
+        android:id="@+id/rlTitle"
+        layout="@layout/common_title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+
+        <!--账号-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/frame_fillet_line_gray"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="1dp"
+            android:paddingEnd="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingStart="16dp"
+            android:paddingTop="1dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/login_account_logo" />
+
+            <EditText
+                android:id="@+id/etUsername"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_marginStart="10dp"
+                android:background="@android:color/transparent"
+                android:maxLines="1"
+                android:hint="@string/username_hint"
+                android:textColor="@color/colorMain"
+                android:textColorHint="@color/colorGray"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <!--密码-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/frame_fillet_line_gray"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="1dp"
+            android:paddingEnd="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingStart="16dp"
+            android:paddingTop="1dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/login_pwd_logo" />
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_marginStart="10dp"
+                android:background="@android:color/transparent"
+                android:maxLines="1"
+                android:hint="@string/password_hint"
+                android:inputType="textPassword"
+                android:textColor="@color/colorMain"
+                android:textColorHint="@color/colorGray"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <!--验证码-->
+        <RelativeLayout
+            android:id="@+id/rlCaptcha"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/frame_fillet_line_gray"
+            android:paddingEnd="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingStart="16dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv3"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/login_code_logo" />
+
+            <EditText
+                android:id="@+id/etCaptcha"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/iv3"
+                android:background="@android:color/transparent"
+                android:maxLines="1"
+                android:hint="@string/captcha_hint"
+                android:maxLength="4"
+                android:textColor="@color/colorMain"
+                android:textColorHint="@color/colorGray"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/ivCaptcha"
+                android:layout_width="80dp"
+                android:layout_height="34dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <!--登录按钮-->
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/frame_fillet_blue"
+            android:text="@string/loginSoon"
+            android:textColor="@color/colorTitle"
+            android:textSize="16sp"
+            skin:enable="true"/>
+
+        <!--提示-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="0.5dp"
+                android:layout_weight="1.5"
+                android:src="@color/login_prompt" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/noAccount"
+                android:textColor="@color/login_prompt"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="0.5dp"
+                android:layout_weight="1.5"
+                android:src="@color/login_prompt" />
+        </LinearLayout>
+
+        <!--免费开户-->
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/frame_fillet_line_blue"
+            android:text="@string/registerSoon"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            skin:enable="true"/>
+
+        <!--试玩-->
+        <Button
+            android:id="@+id/btnTry"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/frame_fillet_line_blue"
+            android:text="@string/btnDemo"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            skin:enable="true"/>
+    </LinearLayout>
+
+</LinearLayout>

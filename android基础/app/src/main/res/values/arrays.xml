@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="fast_choose_list">
+        <item>今天</item>
+        <item>昨天</item>
+        <item>最近7天</item>
+    </string-array>
+    <string-array name="transactionTypes" >
+        <item>全部类型</item>
+    </string-array>
+</resources>

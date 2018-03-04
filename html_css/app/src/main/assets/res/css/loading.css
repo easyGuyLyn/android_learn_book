@@ -1,0 +1,50 @@
+.loading-mask{position:fixed;top:0;left:0;z-index:998;display:none;width:100%;height:100%;background-color:rgba(0,0,0,.5)}
+.loading-mask .gb-loading{position:fixed;left:50%;z-index:999;margin-left:-100px;padding:10px 20px;width:200px;height:100px;border:1px solid #353741;border-radius:9px;background:rgba(255,255,255,.9)}
+.loading-mask .gb-loading .loader{margin-top:18px;min-height:24px}
+.loading-mask .gb-loading .loader-tip{width:100%;color:#807d7d;text-align:center;font-size:12px}
+.loading-mask .gb-loading .ball-pulse>div{background:#807d7d}
+.com-loading{display:none;width:100%;text-align:center}
+.loader{display:flex;box-sizing:border-box;width:100%;min-height:160px;flex:0 1 auto;flex-direction:column;flex-grow:1;flex-shrink:0;flex-basis:25%;align-items:center;justify-content:center}
+.loader.api-loader{min-height:12px!important;align-items:flex-end}
+.game-loading.no-bg{border:none;background:0 0}
+.game-loading .ball-white>div{background:#fff!important}
+@-webkit-keyframes scale{
+    0%{opacity:1;-webkit-transform:scale(1);transform:scale(1);}
+    45%{opacity:.7;-webkit-transform:scale(.1);transform:scale(.1);}
+    80%{opacity:1;-webkit-transform:scale(1);transform:scale(1);}
+}
+@keyframes scale{
+    0%{opacity:1;-webkit-transform:scale(1);transform:scale(1)}
+    45%{opacity:.7;-webkit-transform:scale(.1);transform:scale(.1)}
+    80%{opacity:1;-webkit-transform:scale(1);transform:scale(1)}
+}
+.ball-pulse>div:nth-child(0){-webkit-animation:scale .75s 0s infinite cubic-bezier(.2,.68,.18,1.08);animation:scale .75s 0s infinite cubic-bezier(.2,.68,.18,1.08)}
+.ball-pulse>div:nth-child(1){-webkit-animation:scale .75s .12s infinite cubic-bezier(.2,.68,.18,1.08);animation:scale .75s .12s infinite cubic-bezier(.2,.68,.18,1.08)}
+.ball-pulse>div:nth-child(2){-webkit-animation:scale .75s .24s infinite cubic-bezier(.2,.68,.18,1.08);animation:scale .75s .24s infinite cubic-bezier(.2,.68,.18,1.08)}
+.ball-pulse>div:nth-child(3){-webkit-animation:scale .75s .36s infinite cubic-bezier(.2,.68,.18,1.08);animation:scale .75s .36s infinite cubic-bezier(.2,.68,.18,1.08)}
+.ball-pulse>div{display:inline-block;margin:2px;width:15px;height:15px;border-radius:100%;background-color:#fff;-webkit-animation-fill-mode:both;animation-fill-mode:both}
+.ball-pulse.api-div div{width:8px;height:8px;background-color:#eee}
+@-webkit-keyframes line-scale-pulse-out{
+    0%{-webkit-transform:scaley(1);transform:scaley(1)}
+    50%{-webkit-transform:scaley(.4);transform:scaley(.4)}
+    100%{-webkit-transform:scaley(1);transform:scaley(1)}
+}
+@keyframes line-scale-pulse-out{
+    0%{-webkit-transform:scaley(1);transform:scaley(1)}
+    50%{-webkit-transform:scaley(.4);transform:scaley(.4)}
+    100%{-webkit-transform:scaley(1);transform:scaley(1)}
+}
+.line-scale-pulse-out>div{display:inline-block;margin:2px;width:4px;height:30px;border-radius:2px;background-color:#fff;-webkit-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation:line-scale-pulse-out .9s 0s infinite cubic-bezier(.85,.25,.37,.85);animation:line-scale-pulse-out .9s 0s infinite cubic-bezier(.85,.25,.37,.85)}
+.line-scale-pulse-out>div:nth-child(2),.line-scale-pulse-out>div:nth-child(4){-webkit-animation-delay:.2s!important;animation-delay:.2s!important}
+.line-scale-pulse-out>div:nth-child(1),.line-scale-pulse-out>div:nth-child(5){-webkit-animation-delay:.4s!important;animation-delay:.4s!important}
+.spinner>div{display:inline-block;margin:0 5px;width:15px;height:15px;border-radius:100%;background-color:#fff;-webkit-animation:bouncedelay 1.4s infinite ease-in-out;animation:bouncedelay 1.4s infinite ease-in-out;-webkit-animation-fill-mode:both;animation-fill-mode:both}
+.spinner .bounce1{-webkit-animation-delay:-.32s;animation-delay:-.32s}
+.spinner .bounce2{-webkit-animation-delay:-.16s;animation-delay:-.16s}
+@-webkit-keyframes bouncedelay{
+    0%,100%,80%{-webkit-transform:scale(0)}
+    40%{-webkit-transform:scale(1)}
+}
+@keyframes bouncedelay{
+    0%,100%,80%{-webkit-transform:scale(0);transform:scale(0)}
+    40%{-webkit-transform:scale(1);transform:scale(1)}
+}

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:skin="http://schemas.android.com/android/skin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/bgColor"
+    tools:context=".MainActivity">
+
+    <!--title-->
+    <include android:id="@+id/iToolbar"
+        layout="@layout/toolbar"
+        skin:enable="true" />
+
+    <WebView
+        android:id="@+id/wvHome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/iToolbar"
+        android:layout_marginBottom="@dimen/tab_bar_height" />
+
+    <WebView
+        android:id="@+id/wvDeposit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/iToolbar"
+        android:layout_marginBottom="@dimen/tab_bar_height"
+        android:visibility="gone" />
+
+    <WebView
+        android:id="@+id/wvTransfer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/iToolbar"
+        android:layout_marginBottom="@dimen/tab_bar_height"
+        android:visibility="gone" />
+
+    <WebView
+        android:id="@+id/wvService"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/iToolbar"
+        android:layout_marginBottom="@dimen/tab_bar_height"
+        android:visibility="gone" />
+
+    <WebView
+        android:id="@+id/wvMine"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/iToolbar"
+        android:layout_marginBottom="@dimen/tab_bar_height"
+        android:visibility="gone" />
+
+    <include layout="@layout/main_assets" />
+
+    <!--底部菜单-->
+    <LinearLayout
+        android:id="@+id/llTab"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tab_bar_height"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:background="@color/tabBg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        skin:enable="true">
+
+        <LinearLayout
+            android:id="@+id/llTabHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivHome"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/tab_home_selected"
+                skin:enable="true"/>
+
+            <TextView
+                android:id="@+id/tvHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tabHome"
+                android:textColor="@color/tabTextSelected"
+                android:textSize="12sp"
+                skin:enable="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llTabDeposit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivDeposit"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/tab_deposit_normal"
+                skin:enable="true" />
+
+            <TextView
+                android:id="@+id/tvDeposit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tabDeposit"
+                android:textColor="@color/tabTextNormal"
+                android:textSize="12sp"
+                skin:enable="true"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llTabTransfer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivTransfer"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/tab_transfer_normal"
+                skin:enable="true"/>
+
+            <TextView
+                android:id="@+id/tvTransfer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tabTransfer"
+                android:textColor="@color/tabTextNormal"
+                android:textSize="12sp"
+                skin:enable="true"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llTabService"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivService"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/tab_service_normal"
+                skin:enable="true"/>
+
+            <TextView
+                android:id="@+id/tvService"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tabService"
+                android:textColor="@color/tabTextNormal"
+                android:textSize="12sp"
+                skin:enable="true"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llTabMine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivMine"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/tab_mine_normal"
+                skin:enable="true"/>
+
+            <TextView
+                android:id="@+id/tvMine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tabMine"
+                android:textColor="@color/tabTextNormal"
+                android:textSize="12sp"
+                skin:enable="true"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/tabLine"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_above="@id/llTab"
+        android:layout_marginBottom="@dimen/tab_bar_height"
+        android:background="@color/tabTopLine"
+        skin:enable="true" />
+
+</RelativeLayout>

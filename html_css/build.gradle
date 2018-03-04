@@ -1,0 +1,128 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.0.1'
+        classpath 'com.jakewharton:butterknife-gradle-plugin:8.5.1'
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url "https://jitpack.io" }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext {
+    compileSdkVersion = 26
+    buildToolsVersion = '26.0.2'
+    minSdkVersion = '17'
+    targetSdkVersion = '26'
+    supportVersion = '26.+'
+
+    versionCode = 26
+    versionName = '3.6.9'
+
+//    debugName = '天天彩票'      //生产环境测试用 - 彩票站
+//    debugCode = '1wl5'
+//    debugSid = 'e840ac55fbb3d773fe845ec5ca7d7803'
+//    debugType = 'lottery'
+//    debugSkin = 'lottery.skin'
+//    debugLogo = 'app_logo'
+//    debugIcon = '@mipmap/app_icon'
+
+//    debugName = '超博娱乐'     //生产环境测试用 - 综合站
+//    debugCode = 'zrax'
+//    debugSid = '90e974e3fbae299946d2f89935dc509a'
+//    debugType = 'integrated'
+//    debugSkin = 'default.skin'
+//    debugLogo = 'app_logo'
+//    debugIcon = '@mipmap/app_icon'
+
+//    debugName = '点金坊'     //生产环境测试用 - 综合站
+//    debugCode = 'ptxa'
+//    debugSid = 'b4034680baddc6cecbb609d6fd33785f'
+//    debugType = 'integrated'
+//    debugSkin = 'default.skin'
+//    debugLogo = 'app_logo'
+//    debugIcon = '@mipmap/app_icon'
+
+
+//    debugName = '测试站点二'     //生产环境测试用 - 彩票站
+//    debugCode = '7z5p'
+//    debugSid = '3c28fbbcf2435f133d303e1d845017c5'
+//    debugType = 'lottery'
+//    debugSkin = 'default.skin'
+//    debugLogo = 'app_logo'
+//    debugIcon = '@mipmap/app_icon'
+
+
+//    debugName = 'TEST01[21]'
+//    debugCode = 'rf80'
+//    debugSid = '632fbc122abfffdec078a665a76a1c16'
+//    debugType = 'integrated'
+//    debugSkin = 'default.skin'
+//    debugLogo = 'app_logo'
+//    debugIcon = '@mipmap/app_icon'
+
+//
+//    debugName = '电子777娱乐[116]'     //生产环境测试用
+//    debugCode = 'bldz'
+//    debugSid = '29c781bbc7bd176510f9695dfdf8dd35'
+//    debugType = 'lottery'
+//    debugSkin = 'lottery.skin'
+//    debugLogo = 'app_logo'
+//    debugIcon = '@mipmap/app_icon'
+
+
+
+    debugName = '巴黎人贵宾会[136]'
+    debugCode = 'no9y'
+    debugSid = '77b5741f647310a8e20da52717444794'
+    debugType = 'integrated'
+    debugSkin = 'default.skin'
+    debugLogo = 'app_logo'
+    debugIcon = '@mipmap/app_icon'
+
+//    debugName = 'VIPBET[271]'
+//    debugCode = 'zrax'
+//    debugSid = '90e974e3fbae299946d2f89935dc509a'
+//    debugType = 'integrated'
+//    debugSkin = 'default.skin'
+//    debugLogo = 'app_logo'
+//    debugIcon = '@mipmap/app_icon'
+
+//    debugName = '金沙娱乐场[272]'
+//    debugCode = 'rqcc'
+//    debugSid = '151c699021898f3706e5b544ae28ff20'
+//    debugType = 'integrated'
+//    debugSkin = 'default.skin'
+//    debugLogo = 'app_logo'
+//    debugIcon = '@mipmap/app_icon'
+
+    //    debugName = '金沙娱乐场[272]'
+//    debugCode = 'rqcc'
+//    debugSid = '151c699021898f3706e5b544ae28ff20'
+//    debugType = 'integrated'
+//    debugSkin = 'default.skin'
+//    debugLogo = 'app_logo'
+//    debugIcon = '@mipmap/app_icon'
+
+//        debugName = 'BET365'
+//    debugCode = 'hihk'
+//    debugSid = '5c441ff853deb589cd515950950ef1ec'
+//    debugType = 'integrated'
+//    debugSkin = 'default.skin'
+//    debugLogo = 'app_logo'
+//    debugIcon = '@mipmap/app_icon'
+}

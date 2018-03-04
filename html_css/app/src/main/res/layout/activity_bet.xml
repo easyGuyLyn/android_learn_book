@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.CommonActivity"
+    android:fitsSystemWindows="true"
+    android:background="@color/bgColor">
+    <!--title-->
+    <include android:id="@+id/rlTitle"
+        layout="@layout/bet_toolbar" />
+
+    <WebView
+        android:id="@+id/wvBet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rlTitle" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@id/rlTitle"
+        android:progressDrawable="@drawable/progress_bar_horizontal" />
+</RelativeLayout>
